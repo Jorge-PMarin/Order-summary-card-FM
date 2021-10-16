@@ -4,8 +4,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![How it looks on desktop](./screenshot_desktop.png)
-![How it looks on mobile](./screenshot_mobile.png)
+![How it looks on desktop](./design/desktop-design.png)
+![How it looks on mobile](./design/mobile-design.png)
 
 ### Links
 
