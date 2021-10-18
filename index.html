@@ -21,47 +21,48 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="card">
-      <div class="card__wrapper-head">
+    <main class="card">
+      <div class="card__top">
         <img
           src="images/illustration-hero.svg"
           alt="girl listening to music"
-          class="img-girl"
+          class="card__top__hero"
         />
       </div>
 
-      <div class="card__wrapper-body">
-        <div class="wrapper-text">
-          <h2 class="wrapper-text__title">Order Summary</h2>
-          <p class="wrapper-text__paragraph">
+      <div class="card__bottom">
+        <div class="card__bottom__text">
+          <h1 class="card__bottom__text__title">Order Summary</h1>
+          <p class="card__bottom__text__paragraph">
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
           </p>
         </div>
 
-        <div class="plan-container">
+        <div class="card__bottom__plan">
           <img
             src="images/icon-music.svg"
             alt="music icon"
-            class="music-icon"
+            class="card__bottom__plan__icon"
+            aria-hidden="true"
           />
-          <div class="plan-type">
-            <span class="plan-type__name">Annual Plan</span>
-            <span class="plan-type__price">$59.99/year</span>
+          <div class="card__bottom__plan__text">
+            <span class="card__bottom__plan__text__name">Annual Plan</span>
+            <span class="card__bottom__plan__text__price">$59.99/year</span>
           </div>
           <a href="#">Change</a>
         </div>
 
-        <div class="buttons-container">
+        <div class="card__bottom__plan__buttons">
           <button class="btn proceed-btn">Proceed to Payment</button>
           <button class="btn cancel-btn">Cancel Order</button>
         </div>
       </div>
-    </div>
+    </main>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Jorge Marin</a>.
-    </div>
+    </footer>
   </body>
 </html>

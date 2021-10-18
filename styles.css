@@ -20,13 +20,18 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Red Hat Display', sans-serif;
-  height: 100vh;
+  min-height: 100vh;
+  background-image: url('../images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e0e8ff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.img-girl {
+.card__top__hero {
+  display: block;
   max-width: 100%;
 }
 
@@ -34,33 +39,36 @@ body {
   background-color: #fff;
   width: 90%;
   max-width: 38rem;
-  border-radius: 2rem;
+  border-radius: 1.8rem;
   overflow: hidden;
-  box-shadow: 10px 11px 28px 8px rgba(0,0,0,0.2);
+  box-shadow: 0px 15px 12px hsl(245, 75%, 90%);
 }
 
-.card__wrapper-body {
+.card__bottom {
   width: 80%;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   margin: 0 auto;
 }
 
-.wrapper-text {
+.card__bottom__text {
   text-align: center;
 }
 
-.wrapper-text__title {
+.card__bottom__text__title {
+  font-size: 2.5rem;
   font-weight: 900;
   color: var(--dark-blue);
+  margin: 1.5rem 0 .2rem 0;
 }
 
-.wrapper-text__paragraph {
+.card__bottom__text__paragraph {
   line-height: 2.5rem;
   color: var(--desaturated-blue);
-  padding: 1.3rem;
+  padding: 1.4rem 0.4rem;
+  margin-bottom: .5rem;
 }
 
-.plan-container {
+.card__bottom__plan {
   background-color: var(--very-pale-blue);
   display: flex;
   justify-content: center;
@@ -70,26 +78,27 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.plan-type {
+.card__bottom__plan__text {
   padding-left: 1.5rem;
 }
 
-.plan-type__name {
+.card__bottom__plan__text__name {
   font-weight: 700;
   color: var(--dark-blue);
 }
 
-.plan-type__price {
+.card__bottom__plan__text__price {
   color: var(--desaturated-blue);
 }
 
-.plan-container a {
+.card__bottom__plan a {
   font-size: 1.4rem;
   text-decoration: underline;
   font-weight: 700;
+  transition: all 0.2s;
 }
 
-.plan-container a:hover {
+.card__bottom__plan a:hover {
   text-decoration: none;
   color: var(--desaturated-blue);
 }
@@ -103,6 +112,7 @@ body {
   font-weight: 700;
   font-family: inherit;
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 .proceed-btn {
@@ -124,9 +134,6 @@ body {
 .cancel-btn:hover {
   color: var(--dark-blue);
 }
-
-
-
 
 .attribution {
   position: absolute;
